@@ -36,7 +36,7 @@ class App extends React.Component {
     let id = this.state.value.id
     if (this.state.value !== '') {
       this.state.data.map(item => {
-        if (item.id == id) {
+        if (item.id === id) {
           item.title = title
           item.text = text
         }
@@ -83,7 +83,7 @@ class App extends React.Component {
           <div className='w-[100%]   text-center  border-[1.9px] '>
             <h1 className='text-3xl text-black font-bold py-2 bg-[#fcfaf5]'>open</h1>
             {
-              data.filter((item) => item.title == 'open').map((item) => (
+              data.filter((item) => item.title === 'open').map((item) => (
                 <div>
                   <ul className='items-center  px-5 bg-[#868181] '>
                     <li className='flex items-center gap-24 pl-12'>
@@ -104,7 +104,7 @@ class App extends React.Component {
           <div className='w-[100%]   text-center border-[1.9px]  '>
             <h1 className='text-3xl text-black font-bold py-2 bg-[#fcfaf5]'>pending</h1>
             {
-              data.filter((item) => item.title == 'pending').map((item) => (
+              data.filter((item) => item.title === 'pending').map((item) => (
                 <div>
                   <ul className='items-center  px-5 bg-[#868181] '>
                     <li className='flex items-center gap-24 pl-12'>
@@ -125,7 +125,7 @@ class App extends React.Component {
           <div className='w-[100%]   text-center  border-[1.9px]  '>
             <h1 className='text-3xl text-black font-bold py-2 bg-[#fcfaf5]'>progress</h1>
             {
-              data.filter((item) => item.title == 'progress').map((item) => (
+              data.filter((item) => item.title === 'progress').map((item) => (
                 <div>
                   <ul className='items-center  px-5 bg-[#868181] '>
                     <li className='flex items-center gap-24 pl-12'>
